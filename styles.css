@@ -1,0 +1,151 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Set background color to black */
+    color: #f4f4f4; /* Set text color to light grey for better contrast */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    flex: 1; /* Make the container flex-grow to push the footer to the bottom */
+}
+
+.containerindex {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex: 1; /* Make the container flex-grow to push the footer to the bottom */
+    flex-direction: row;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Center the navigation */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #32CD32; /* Set link color to green */
+    text-decoration: none;
+    font-weight: bold; /* Make link fonts bold */
+    transition: all 0.4s ease-out;
+}
+
+nav ul li a:hover {
+    color: #000; /* Set link color to black on hover */
+    background-color: #32CD32; /* Set background color to green on hover */
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    background-color: #1c1c1c; /* Dark grey background for sections */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.containerindex img{
+    border-radius: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:0;
+    width: 350px;
+    height: 400px;
+}
+
+.containerindex p{
+    padding-left: 40px;
+}
+section h2 {
+    margin-top: 0;
+    color: #32CD32; /* Set section heading color to green */
+    font-size: 24px;
+    font-weight: 700;
+}
+
+section p, section ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f4f4f4; /* Light grey text color */
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #0073e6;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #1c1c1c; /* Dark grey background for input fields */
+    color: #f4f4f4; /* Light grey text color */
+}
+
+form button {
+    padding: 10px;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #005bb5;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
