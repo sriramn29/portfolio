@@ -2,7 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Set background color to black */
+    background-color: #000; 
     color: #f4f4f4; /* Set text color to light grey for better contrast */
     display: flex;
     flex-direction: column;
@@ -66,12 +66,13 @@ section {
     margin-left: 5%;
 }
 .containerindex img{
-    border-radius: 10%;
+    border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left:0;
     width: 350px;
     height: 400px;
+    margin: 20px;
 }
 
 .containerindex p{
@@ -100,7 +101,7 @@ section ul li {
 
 footer {
     text-align: center;
-    background-color: #0073e6;
+    background-color: black;
     color: #fff;
     position: fixed;
     width: 100%;
@@ -110,8 +111,7 @@ footer {
 form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
-    height: 200px;
+    height: 300px;
 }
 
 form label {
@@ -128,20 +128,26 @@ form input, form textarea {
     background-color: #1c1c1c; /* Dark grey background for input fields */
     color: #f4f4f4; /* Light grey text color */
 }
-
 form button {
-    padding: 10px;
-    background-color: #0073e6;
-    color: #fff;
+    background-color: #fff;
+    color: #32CD32; /* Set link color to green */
+    text-decoration: none;
+    font-weight: bold; /* Make link fonts bold */
+    transition: all 0.4s ease-out;
+    padding: 5px 10px;
+    width: 70px;
+    margin-left: 600px;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+  }
 
 form button:hover {
-    background-color: #005bb5;
+    color: #000; /* Set link color to black on hover */
+    background-color: #32CD32; /* Set background color to green on hover */
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 @media (max-width: 768px) {
